@@ -1,0 +1,9 @@
+[workspace]
+[package]
+version = "0.1.0"
+name = "avail-sp1-program"
+edition = "2021"
+
+[dependencies]
+sp1-zkvm = { git = "https://github.com/succinctlabs/sp1.git", branch = "main" }
+subxt = { version = "0.34.0", default-features = false, features = ["native"] }

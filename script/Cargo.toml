@@ -1,0 +1,16 @@
+[workspace]
+[package]
+version = "0.1.0"
+name = "avail-sp1-script"
+edition = "2021"
+
+[dependencies]
+sp1-sdk = { git = "https://github.com/succinctlabs/sp1.git", branch = "main" }
+avail-subxt = { git = "https://github.com/availproject/avail.git", branch = "main" }
+subxt = { version = "0.34.0" }
+anyhow = "1.0.66"
+tokio = { version = "1.21.2", features = ["full"] }
+futures = "0.3.25"
+
+[build-dependencies]
+sp1-helper = { git = "https://github.com/succinctlabs/sp1.git", branch = "main" }
