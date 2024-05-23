@@ -8,12 +8,16 @@ edition = "2021"
 sp1-zkvm = { git = "https://github.com/succinctlabs/sp1.git", branch = "main" }
 subxt = { version = "0.34.0", default-features = false, features = ["native"] }
 avail-core = { git = "https://github.com/availproject/avail-core", branch = "main", default-features = false, features = ["runtime", "serde"] }
-avail-subxt = { git = "https://github.com/availproject/avail.git", branch = "main", default-features = false, features = ["std"]}
+# avail-subxt = { git = "https://github.com/availproject/avail.git", branch = "main", default-features = false }
 sp-io = { git = "https://github.com/availproject/polkadot-sdk.git", tag = "polkadot-1.7.1-patch-5", default-features = false, features = ["disable_panic_handler"] }
 derive_more = { version = "0.99.0", default-features = false, features = ["from", "add", "iterator", "deref", "constructor", "mul", "display"] }
 tokio = { version = "1.21.2", default-features = false }
 anyhow = "1.0.66"
 futures = "0.3.25"
+getrandom = { version = "0.1.16", default-features = false, features = ["dummy"]}
 
 [dependencies.unicode-normalization]
 version = "0.1.22"
+
+[patch.crates-io]
+target-lexicon = { path = "../../target-lexicon", default-features = false }
