@@ -11,4 +11,5 @@ pub fn main() {
 
     sp1_zkvm::io::commit(&hash_input);
     sp1_zkvm::io::commit(&hash_output);
+    sp1_zkvm::io::commit(&1);
 }
