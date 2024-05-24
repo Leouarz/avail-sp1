@@ -3,7 +3,7 @@
 #![no_main]
 sp1_zkvm::entrypoint!(main);
 
-use anyhow::Result;
+// use anyhow::Result;
 // use avail_subxt::AvailClient;
 use subxt::utils::H256;
 
