@@ -5,7 +5,7 @@ name = "avail-sp1-program"
 edition = "2021"
 
 [dependencies]
-# avail-subxt = { path = "../avail-subxt", default-features = false, features = ["native"] }
+# avail-subxt = { path = "../avail-subxt", default-features = false }
 sp1-zkvm = { git = "https://github.com/succinctlabs/sp1.git", branch = "main" }
 subxt = { version = "0.34.0", default-features = false, features = ["native"] }
 avail-core = { git = "https://github.com/availproject/avail-core", branch = "main", default-features = false, features = ["runtime", "serde"] }
@@ -20,3 +20,6 @@ scale-info = { version = "2.5.0", features = ["bit-vec"] }
 bounded-collections = { version = "0.2.0", features = ["serde"] }
 getrandom = { version = "0.1.16", default-features = false, features = ["dummy"]}
 anyhow = { version = "1.0.66" }
+
+# [patch.crates-io]
+# target-lexicon = { path = "../../target-lexicon" }
