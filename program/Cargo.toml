@@ -5,6 +5,7 @@ name = "avail-sp1-program"
 edition = "2021"
 
 [dependencies]
+# avail-subxt = { path = "../avail-subxt", default-features = false, features = ["native"] }
 sp1-zkvm = { git = "https://github.com/succinctlabs/sp1.git", branch = "main" }
 subxt = { version = "0.34.0", default-features = false, features = ["native"] }
 avail-core = { git = "https://github.com/availproject/avail-core", branch = "main", default-features = false, features = ["runtime", "serde"] }
